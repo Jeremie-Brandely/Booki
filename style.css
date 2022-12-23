@@ -7,3 +7,37 @@
 body {
     font-family: Raleway;
 }
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 61.09px;
+    height: 19px;
+    margin-top: 44px;
+    margin-left: 55px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    margin-top: 48px;
+    margin-right: 77px;
+}
+
+.Hebergement {
+    padding-right: 67px;
+    ;
+}
+
+.Hebergement:hover {
+    border-top: 2px #0065FC solid;
+}
+
+.Activite {
+    padding-left: 67px;
+}
