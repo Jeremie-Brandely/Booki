@@ -2,24 +2,108 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/f8a986a80c.js" crossorigin="anonymous"></script>
 		<title>Booki</title>
 	</head>
 
 	<body>
-       
+<!--Partie en-tete et nav-->
+
+		
 		<header>
 			<div id="logo">	<img src="Images/Images Booki/logo/Booki.png" alt="booki" id="logo"/> </div>
 			<div id="menu">	<div class="Hebergement"><a href="#hebergement">Hébergements</a></div> <div class="Activite"><a href="#activité">Activités</a> </div> </div>
 		</header>
 
+<!--Partie section Recherche-->
+
 		<div id="formulaire-recherche">
 			<div class="titre-recherche">	<h1>Trouvez votre hébergement pour des vacances de rêve</h1> </div>
 			<div class="description-recherche"> <p>En plein centre-ville ou en pleine nature</p> </div>
-			<div class="fonction-recherche"> </div>
+			<div id="fonction-recherche"> 	<form action="" class="formulaire">
+											<div class="location"><i class="fa-solid fa-location-dot"></i> </div> 
+											<input type="search" class="rechercher" name="Rechercher" placeholder="Marseille, France"> 
+											<div class="button"><button> Rechercher </button> </div> </form> </div> 
 		</div>
 
+<!-- Partie Filtres-->
+
+		<div id="filtres">
+			<div class=filtre> <h2>Filtres</h2> </div>
+			<div class="filtre-1"> <div class=bill> <i class="fa-solid fa-money-bill-wave"> </i></div> <h3> Économique </h3> </div>
+			<div class="filtre-2"> <div class=person> <i class="fa-solid fa-person"></i></div> <h3> Familial </h3> </div>
+			<div class="filtre-3"> <div class=heart> <i class="fa-solid fa-heart"></i></div> <h3> Romantique </h3> </div>
+			<div class="filtre-4"> <div class=dog> <i class="fa-solid fa-dog"></i></div> <h3> Animaux Domestiques </h3> </div>
+		</div>
+		
+<!--Point info-->
+		<div id="info">
+			<div class="i"> <i class="fa-solid fa-info"></i> </div>
+			<div class="point-info"> <p>Plus de 500 logements sont disponibles dans cette ville</p> </div>
+		</div> 
+	
+		
+<!--Cartes hebergement a Marseille-->
+	<div id="Cartes">
+
+		<section>
+			<div class="titre-hebergement"> <h1>Hébergements a Marseille</h1> </div>
+				<div id="hebergement"> 
+					<div id="carte-1" href="#">
+						<img class="img1" src="Images/Images Booki/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge canebiere">
+						<div class="container1">
+						  <div class="titre-c1"> <h3>Auberge La Canebière</h3> </div>
+						  <div class="prix-c1"> <p>Nuit à partir de 25€</p> </div>
+						  		<!--Notation etoiles (carte 1 star 1)-->
+						  		<div id="notes-c1"> 	
+										<div class="c1-s1"> <i class="fa-solid fa-star"></i> </div>
+						 	 			<div class="c1-s2"> <i class="fa-solid fa-star"></i> </div>
+						 	 			<div class="c1-s3"> <i class="fa-solid fa-star"></i> </div>
+						 	 			<div class="c1-s4"> <i class="fa-solid fa-star"></i> </div>
+						  	 			<div class="c1-s5"> <i class="fa-solid fa-star"></i> </div>
+							 	</div>
+						</div>
+					</div>
+
+					<div class="Carte-2"> </div>
+					<div class="Carte-3"> </div>
+					<div class="Carte-4"> </div>
+					<div class="Carte-5"> </div>
+					<div class="Carte-6"> </div>
+				</div>
+			
+		</section>	
+
+<!--Cartes les plus populaires-->
+
+		<aside>
+			<div class="titre-populaire"> <h1>Les plus populaires</h1> <i class="fa-solid fa-chart-line"></i> </div>
+				<div id="populaire">
+					<div id="carte-p1" href="#">
+						<img class="img-p1" src="Images/Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Soleil matin">
+						<div class="container-p1">
+							<div class="titre-p1"> <h3>Hôtel Le soleil du matin</h3> </div>
+							<div class="prix-p1"> <p>Nuit à partir de 128€</p> </div>
+								<!--Notation etoiles (carte populaire 1 star 1)-->
+								<div id="notes-p1"> 	
+										<div class="cp1-s1"> <i class="fa-solid fa-star"></i> </div>
+							  			<div class="cp1-s2"> <i class="fa-solid fa-star"></i> </div>
+							  			<div class="cp1-s3"> <i class="fa-solid fa-star"></i> </div>
+							 			<div class="cp1-s4"> <i class="fa-solid fa-star"></i> </div>
+							   			<div class="cp1-s5"> <i class="fa-solid fa-star"></i> </div>
+								</div>		
+						</div>
+					</div>
+
+
+
+				</div>
+
+		</aside>
+	</div> <!--Div contenant la section et l'aside pour les placer a coté-->
 		
         
 	</body>
