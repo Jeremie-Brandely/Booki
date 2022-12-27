@@ -211,7 +211,7 @@ button {
 
 section {
     width: 70%;
-    height: 650px;
+    height: 700px;
     border: #F2F2F2;
     border-radius: 20px;
     background: #F2F2F2;
@@ -223,41 +223,45 @@ section {
 }
 
 #hebergement {
-    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
+.afficher-hebergement {
+    padding-left: 30px;
+    padding-top: 20px;
+}
 
-#carte-1 {
-    width: 260px;
+#carte-1, #carte-2, #carte-3, #carte-4, #carte-5, #carte-6 {
+    width: 250px;
     height: 250px;
     border: 1px solid white;
     border-radius: 20px;
     background: white;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 
-.img1 {
-    width: 250px;
+.img-c1, .img-c2, .img-c3, .img-c4, .img-c5, .img-c6 {
     height: 125px;
+    object-fit: cover;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
 }
 
-.container1 {
+.container-c1, .container-c2, .container-c3, .container-c4, .container-c5, .container-c6 {
     width: 250px;
     height: 100px;
 }
 
-.titre-c1 {
+.titre-c1, .titre-c2, .titre-c3, .titre-c4, .titre-c5, .titre-c6 {
     padding-left: 10px;
 }
 
-.prix-c1 {
-    padding-left: 10px;
-}
-
-#notes-c1 {
+#notes-c1, #notes-c2, #notes-c3, #notes-c4, #notes-c5, #notes-c6 {
     display: flex;
     flex-direction: row;
     padding-left: 10px;
@@ -265,11 +269,11 @@ section {
 
 /* Etoiles notation */
 
-.c1-s1, .c1-s2, .c1-s3, .c1-s4 {
+.c1-s1, .c1-s2, .c1-s3, .c1-s4, .c2-s1, .c2-s2, .c2-s3, .c2-s4, .c3-s1, .c3-s2, .c3-s3, .c3-s4, .c4-s1, .c4-s2, .c4-s3, .c4-s4, .c5-s1, .c5-s2, .c5-s3, .c5-s4, .c6-s1, .c6-s2, .c6-s3, .c6-s4{
     color: #0065FC;
 }
 
-.c1-s5 {
+.c1-s5, .c2-s5, .c3-s5, .c4-s5, .c5-s5, .c6-s5 {
     color: #F2F2F2;
 }
 
@@ -277,7 +281,7 @@ section {
 
 aside {
     width: 35%;
-    height: 650px;
+    height: 700px;
     border: #F2F2F2;
     border-radius: 20px;
     background: #F2F2F2;
@@ -287,17 +291,31 @@ aside {
     padding-top: 15px;
 }
 
-.titre-populaire {
+#titre-populaire {
     padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
+
+.stats {
+    padding-right: 40px;
+    padding-top: 15px;
+    color: #0065FC;
 }
 
 #populaire {
     padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#carte-p1 {
-    width: 350px;
-    height: 150px;
+#carte-p1, #carte-p2, #carte-p3 {
+    width: 400px;
+    height: 160px;
+    object-fit: cover;
+    margin-top: 30px;
     border: 1px solid white;
     border-radius: 20px;
     background: white;
@@ -305,40 +323,37 @@ aside {
     flex-direction: row;
 }
 
-.img-p1 {
-    width: 130px;
-    height: 140px;
+.img-p1, .img-p2, .img-p3 {
+    width: 150px;
+    object-fit: cover;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
 }
 
-.container-p1 {
+#container-p1, #container-p2, #container-p3 {
     width: 350px;
     height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.titre-p1 {
+.titre-p1, .titre-p2, .titre-p3 {
     padding-left: 10px;
 }
 
-.prix-p1 {
-    padding-left: 10px;
-}
-
-#notes-p1 {
+#notes-p1, #notes-p2, #notes-p3 {
     display: flex;
     flex-direction: row;
-    padding-left: 10px;
-    padding-top: 40px;
 }
 
 /* Etoiles notation populaire */
 
-.cp1-s1, .cp1-s2, .cp1-s3, .cp1-s4 {
+.cp1-s1, .cp1-s2, .cp1-s3, .cp1-s4, .cp2-s1, .cp2-s2, .cp2-s3, .cp2-s4, .cp3-s1, .cp3-s2, .cp3-s3, .cp3-s4 {
     color: #0065FC;
 }
 
-.cp1-s5 {
+.cp1-s5, .cp2-s5, .cp3-s5 {
     color: #F2F2F2;
 }
 
