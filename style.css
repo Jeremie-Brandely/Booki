@@ -235,7 +235,7 @@ section {
 }
 
 #carte-1, #carte-2, #carte-3, #carte-4, #carte-5, #carte-6 {
-    width: 250px;
+    width: 30%;
     height: 250px;
     border: 1px solid white;
     border-radius: 20px;
@@ -302,6 +302,8 @@ aside {
     padding-right: 40px;
     padding-top: 15px;
     color: #0065FC;
+    width: 18px;
+    height: 16px;
 }
 
 #populaire {
@@ -313,8 +315,7 @@ aside {
 
 #carte-p1, #carte-p2, #carte-p3 {
     width: 400px;
-    height: 160px;
-    object-fit: cover;
+    height: 30%;
     margin-top: 30px;
     border: 1px solid white;
     border-radius: 20px;
@@ -363,3 +364,58 @@ aside {
     display: flex;
     flex-direction: row;
 }
+
+/* cartes activités*/
+
+.titre-activité {
+    padding-top: 60px;
+}
+
+#activité {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#carte-a1, #carte-a2, #carte-a3, #carte-a4 {
+    width: 20%;
+    height: 450px;
+    margin-top: 20px;
+    border: 0px solid white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px 3px #F2F2F2;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-a1, .img-a2, .img-a3, .img-a4 {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#container-a1, #container-a2, #container-a3, #container-a4 {
+    width: 100%;
+    padding-left: 20px;
+}
+
+
+/* Pied de page*/
+
+footer {
+    width: 100%;
+    height: 225px;
+    border: #F2F2F2;
+    background: #F2F2F2;
+    margin-top: 60px;
+    padding-top: 45px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
