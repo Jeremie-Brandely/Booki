@@ -159,11 +159,12 @@ button {
     padding-top: 45px;
 }
 
-.filtre {
-    padding-right: 25px;
+#bouton-filtre {
+    display: flex;
+    flex-direction: row;
 }
 
-.filtre-1, .filtre-2, .filtre-3, .filtre-4 {
+.filtre {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -175,7 +176,7 @@ button {
     margin-right: 40px;
 }
 
-.filtre-1:hover, .filtre-2:hover, .filtre-3:hover, .filtre-4:hover {
+.filtre:hover {
     background: #DEEBFF;
 } 
 
@@ -272,7 +273,7 @@ button {
 
 .img-c {
     height: 125px;
-    width: 96%;
+    width: 98%;
     object-fit: cover;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
@@ -305,7 +306,7 @@ button {
 
 /* Cartes Les plus Populaires*/
 
-aside {
+#section-populaire {
     width: 35%;
     height: 700px;
     border: #F2F2F2;
@@ -336,12 +337,13 @@ aside {
     padding-left: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #carte-p1, #carte-p2, #carte-p3 {
-    width: 95%;
-    height: 30%;
+    width: 350px;
+    height: 160px;
     margin-top: 30px;
     border: 1px solid white;
     border-radius: 20px;
@@ -353,6 +355,8 @@ aside {
     color: black;
 }
 
+
+
 .img-p {
     width: 150px;
     min-width: 150px;
@@ -363,8 +367,8 @@ aside {
 }
 
 #container-p1, #container-p2, #container-p3 {
-    width: 350px;
-    height: 140px;
+    width: 200px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -452,5 +456,229 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+/* Media Queries Tablette*/
+
+@media screen and (max-width:992px) {
+
+    body, header, main, footer {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+    
+    
+    
+    .filtre {
+        padding: 10px;
+        margin: 10px;
+        height: 20px;
+    }
+
+    #section-hebergement {
+        width: 100%;
+        margin:0 auto;
+    }
+
+    #Cartes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section-populaire {
+        width: 100%;
+        height: 300px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin-top: 40px;
+}
+
+    #titre-populaire {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+}
+
+    #populaire {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        padding: 0px;
+}
+
+    #carte-p1, #carte-p2, #carte-p3 {
+        width: 280px;
+        
+    }
+
+    #carte-a1, #carte-a2, #carte-a3, #carte-a4 {
+        width: 180px;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    
+    .img-a {
+        width: 100%;
+        height: 200px;
+        min-height: 200px;
+        object-fit: cover;
+    }
+
+}
+
+
+
+/*Media Queries Téléphones*/
+
+@media screen and (max-width:768px) {
+
+    body {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin:0 auto;
+    }
+    
+    #logo-Booki {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin:0 auto;
+
+    }
+
+    #filtres{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        
+    }
+
+    #filtre-seul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bouton-filtre{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .filtre {
+        width:150px;
+        height: 40px;
+        font-size: 21px;
+    }
+
+    #Cartes {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #section-populaire {
+        width: 100%;
+        height: 650px;
+        margin:0 auto;
+        margin-bottom: 40px;
+        border-radius: 0;
+    }
+
+    #populaire {
+        flex-direction: column;
+        width: 350px;
+        margin: 0 auto;
+        padding-top: 150px;
+
+    }
+
+    #carte-p1, #carte-p2, #carte-p3 {
+        width: 100%;
+        
+    }
+
+    #section-hebergement {
+        background-color: white;
+        width: 98%;
+        height: 1200px;
+        margin-top: 0px
+    }
+
+    #hebergement {
+        flex-direction: column;
+    }
+
+    #carte-1, #carte-2, #carte-3, #carte-4, #carte-5, #carte-6 {
+        width: 92%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .afficher-hebergement {
+        display: none;
+    }
+    
+    #section-activité {
+        margin-top: 500px;
+    }
+
+    .titre-activité {
+        margin-left: 20px;
+    }
+
+    #activité {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    #carte-act1, #carte-act2, #carte-act3, #carte-act4 {
+        width: 92%;
+        height: 200px;
+
+    }
+    
+       
+    #carte-a1, #carte-a2, #carte-a3, #carte-a4 {
+        width: 92%;
+        height: 250px;
+    }
+    
+    .img-a {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    #footer {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+
 }
 
