@@ -126,11 +126,11 @@ form {
 
 input {
     border:none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
 
-.button {
+.button-search {
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     background-color: #0065FC;
@@ -138,10 +138,21 @@ input {
     padding-bottom: 10px;
 }
 
+.button-mobile {
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    color: white;
+}
+
 button {
     color: #F2F2F2;
     border: none;
     background-color: #0065FC;
+}
+
+.button-mobile {
+    display: none;
 }
 
 .formulaire {
@@ -273,7 +284,7 @@ button {
 
 .img-c {
     height: 125px;
-    width: 98%;
+    width: 96%;
     object-fit: cover;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
@@ -414,7 +425,7 @@ button {
 }
 
 #carte-a1, #carte-a2, #carte-a3, #carte-a4 {
-    width: 300px;
+    width: 270px;
     height: 450px;
     margin-top: 20px;
     border: 0px solid white;
@@ -480,6 +491,12 @@ footer {
         margin:0 auto;
     }
 
+    .img-c {
+        height: 125px;
+        width: 95%;
+        object-fit: cover;
+    }
+
     #Cartes {
         display: flex;
         flex-direction: column;
@@ -488,7 +505,7 @@ footer {
     #section-populaire {
         width: 100%;
         height: 300px;
-        margin: auto;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         padding: 0px;
@@ -499,6 +516,7 @@ footer {
         display: flex;
         flex-direction: row;
         width: 100%;
+        padding-top: 10px;
 }
 
     #populaire {
@@ -512,9 +530,19 @@ footer {
 }
 
     #carte-p1, #carte-p2, #carte-p3 {
-        width: 280px;
-        
+        width: 260px;
+        min-width: 260px;
+        max-width: 300px;
+        height: 180px;
     }
+
+    .img-p {
+        width: 130px;
+        max-width: 130px;
+        height: 95%;
+        object-fit: cover;
+    }
+
 
     #carte-a1, #carte-a2, #carte-a3, #carte-a4 {
         width: 180px;
@@ -535,7 +563,7 @@ footer {
 
 
 
-/*Media Queries Téléphones*/
+/*Media Queries Téléphone*/
 
 @media screen and (max-width:768px) {
 
@@ -555,7 +583,6 @@ footer {
     #logo-Booki {
         display: flex;
         justify-content: center;
-        
     }
 
     #menu {
@@ -567,13 +594,79 @@ footer {
 
     }
 
+
+
+    .Hebergement {
+        text-align: center;
+        padding-bottom: 20px;
+        border-top: none;
+        border-bottom: 3px #F2F2F2 solid;
+    }
+
+
+    .Activite {
+        text-align: center;
+        padding-bottom: 20px;
+        border-top: none;
+        border-bottom: 3px #F2F2F2 solid;
+    }
+
+
+
+    
+    .Hebergement:hover {
+        border-bottom: 2px #0065FC solid;
+        color: #0065FC;
+        border-top: none;
+    }
+    
+
+    
+    .Activite:hover {
+        border-bottom: 2px #0065FC solid;
+        color: #0065FC;
+        border-top: none;
+    }
+    
+    #formulaire-recherche {
+        margin-left: 20px;
+    }
+
+    .button-search {
+        display: none;
+    }
+
+    .button-mobile {
+        display: contents;
+    }
+
+    input {
+      
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    
+    button {
+        color: #F2F2F2;
+        border: none;
+        background-color: #0065FC;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 10px;
+        border-radius: 0px 15px 15px 0px;
+    }
+
+
     #filtres{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: flex-end;
-        
+        margin-left: 20px;
     }
+
+    
 
     #filtre-seul{
         display: flex;
@@ -592,6 +685,10 @@ footer {
         font-size: 21px;
     }
 
+    #info {
+        margin-left: 20px;
+    }
+
     #Cartes {
         display: flex;
         flex-direction: column-reverse;
@@ -599,10 +696,15 @@ footer {
 
     #section-populaire {
         width: 100%;
-        height: 650px;
+        min-width: 400px;
+        height: 700px;
         margin:0 auto;
         margin-bottom: 40px;
         border-radius: 0;
+    }
+
+    #titre-populaire {
+        padding-bottom: 20px;
     }
 
     #populaire {
@@ -620,19 +722,28 @@ footer {
 
     #section-hebergement {
         background-color: white;
-        width: 98%;
+        width: 100%;
+        min-width: 400px;
         height: 1200px;
         margin-top: 0px
     }
 
     #hebergement {
         flex-direction: column;
+        width: 350px;
+        margin: 0 auto;
     }
 
     #carte-1, #carte-2, #carte-3, #carte-4, #carte-5, #carte-6 {
         width: 92%;
+        min-width: 300px;
         margin-top: 20px;
         margin-left: 20px;
+        max-width: 400px;
+    }
+
+    .img-c {
+        width: 97%;
     }
 
     .afficher-hebergement {
