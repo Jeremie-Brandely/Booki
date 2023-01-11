@@ -464,7 +464,7 @@ footer {
     footer {
         width: 100%;
         margin: 0 auto;
-        padding: 0;
+
     }
 
     .filtre {
@@ -503,6 +503,7 @@ footer {
         display: flex;
         flex-direction: row;
         padding-top: 10px;
+        padding-left: 10px;
     }
 
     .stats {
@@ -517,27 +518,36 @@ footer {
 
     }
 
+    .titre-p {
+        margin-top: 0px;
+    }
+
     #carte-p {
         width: 100%;
-        min-width: 260px;
         max-width: 300px;
         height: 180px;
     }
 
+    h4 {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+
     #populaire article {
         width: 100%;
+        padding-left: 3px;
+        padding-right: 3px;
     }
 
     .img-p {
-        width: 130px;
-        max-width: 130px;
-        height: 95%;
+
         object-fit: cover;
     }
 
+
     #carte-a {
         width: 180px;
-        height: 260px;
         display: flex;
         flex-direction: column;
         margin-bottom: 60px;
@@ -554,7 +564,11 @@ footer {
 /*Media Queries Téléphone*/
 
 @media screen and (max-width: 768px) {
+
+
     body {
+        width: 100%;
+        margin: 0 auto;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -570,6 +584,7 @@ footer {
     #logo-Booki {
         display: flex;
         justify-content: center;
+        margin-bottom: 40px;
     }
 
     #menu {
@@ -582,10 +597,13 @@ footer {
 
     .Hebergement {
         text-align: center;
-        padding-bottom: 20px;
         border-top: none;
         border-bottom: 3px #f2f2f2 solid;
         width: 50%;
+        margin: 0 auto;
+        padding: 0;
+        padding-bottom: 20px;
+
     }
 
     .Activite {
@@ -593,6 +611,9 @@ footer {
         border-top: none;
         border-bottom: 3px #f2f2f2 solid;
         width: 50%;
+        padding: 0;
+        margin: 0 auto;
+        padding-bottom: 20px;
     }
 
     .Hebergement:hover {
@@ -610,6 +631,15 @@ footer {
     #formulaire-recherche {
         margin-left: 20px;
     }
+
+    #fonction-recherche {
+        width: 100%;
+    }
+
+    .formulaire {
+        margin: 0;
+    }
+
 
     .button-search {
         display: none;
@@ -630,7 +660,7 @@ footer {
         background-color: #0065fc;
         padding-top: 10px;
         padding-bottom: 10px;
-        padding-right: 20px;
+        padding-right: 25px;
         padding-left: 10px;
         border-radius: 0px 15px 15px 0px;
     }
@@ -682,12 +712,27 @@ footer {
 
     #populaire {
         flex-direction: column;
-        width: 350px;
+        justify-items: center;
+        width: 100%;
         margin: 0 auto;
+
+    }
+
+    #populaire article {
+        width: 100%;
+        padding: 0px
     }
 
     #carte-p {
         width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+
+
+    .img-p {
+        height: 94%;
     }
 
     #section-hebergement {
@@ -698,19 +743,26 @@ footer {
 
     #hebergement {
         flex-direction: column;
+        justify-content: center;
         width: 100%;
         margin: 0 auto;
+
     }
 
     #carte-h {
         width: 100%;
+        margin: 0 auto;
+        padding: 0;
         margin-top: 20px;
-
     }
+
 
     .img-c {
-        width: 97%;
+        width: 95%;
+        object-fit: cover;
+
     }
+
 
     .afficher-hebergement {
         display: none;
@@ -724,6 +776,7 @@ footer {
 
     #activité {
         flex-direction: column;
+        justify-content: center;
         width: 100%;
     }
 
