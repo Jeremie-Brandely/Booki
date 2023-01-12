@@ -638,6 +638,8 @@ footer {
 
     .formulaire {
         margin: 0;
+        padding: 0;
+        width: 20%;
     }
 
 
@@ -652,6 +654,7 @@ footer {
     input {
         padding-top: 8px;
         padding-bottom: 8px;
+        width: 120px
     }
 
     button {
@@ -746,6 +749,7 @@ footer {
         justify-content: center;
         width: 100%;
         margin: 0 auto;
+        max-width: 300px;
 
     }
 
@@ -778,6 +782,8 @@ footer {
         flex-direction: column;
         justify-content: center;
         width: 100%;
+        margin: 0 auto;
+        max-width: 300px;
     }
 
     #carte-act {
@@ -786,6 +792,7 @@ footer {
 
     #carte-a {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .img-a {
