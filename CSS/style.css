@@ -287,6 +287,7 @@ button {
 
 .container-c {
     padding-bottom: 5px;
+
 }
 
 .titre-c {
@@ -296,7 +297,9 @@ button {
 #notes-c {
     display: flex;
     flex-direction: row;
+
     padding-left: 10px;
+
 }
 
 /* Etoiles notation */
@@ -634,14 +637,24 @@ footer {
 
     #fonction-recherche {
         width: 100%;
+        margin: 0;
+        max-width: 250px;
+    }
+
+    input.rechercher {
+        width: 100%;
     }
 
     .formulaire {
         margin: 0;
         padding: 0;
-        width: 20%;
     }
 
+    form.formulaire {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
 
     .button-search {
         display: none;
@@ -654,7 +667,7 @@ footer {
     input {
         padding-top: 8px;
         padding-bottom: 8px;
-        width: 120px
+
     }
 
     button {
@@ -666,6 +679,8 @@ footer {
         padding-right: 25px;
         padding-left: 10px;
         border-radius: 0px 15px 15px 0px;
+        width: auto;
+
     }
 
     #filtres {
@@ -754,7 +769,7 @@ footer {
     }
 
     #carte-h {
-        width: 100%;
+        width: 95%;
         margin: 0 auto;
         padding: 0;
         margin-top: 20px;
