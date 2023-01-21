@@ -161,7 +161,8 @@ button {
 /* Partie Filtres*/
 
 #filtres {
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -287,18 +288,20 @@ button {
 
 .container-c {
     padding-bottom: 5px;
+    padding-left: 10px;
 
 }
 
 .titre-c {
-    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .notes-c {
     display: flex;
     flex-direction: row;
 
-    padding-left: 10px;
+
 
 }
 
@@ -373,17 +376,20 @@ button {
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 5px;
+    padding-left: 10px;
 }
 
 .titre-p {
-    padding-left: 10px;
+
     flex-wrap: wrap;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .notes-p {
     display: flex;
     flex-direction: row;
-    padding-left: 10px;
+
 }
 
 /* Etoiles notation populaire */
@@ -438,6 +444,8 @@ button {
 
 .container-a {
     padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* Pied de page*/
